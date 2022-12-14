@@ -1,5 +1,5 @@
 <?php
-class Elementor_Hello_World_Widget_1 extends \Elementor\Widget_Base {
+class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'hello_world_widget_1';
