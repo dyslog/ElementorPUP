@@ -6,7 +6,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Hello World 1', 'elementor-addon' );
+		return esc_html__( 'Pup Repeater', 'elementor-addon' );
 	}
 
 	public function get_icon() {
