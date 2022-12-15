@@ -50,6 +50,15 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 			]
 		);
 
+		$this->add_control(
+			'widget_value',
+			[
+				'label' => esc_html__( 'value', 'elementor-currency-control' ),
+				'type' => \Elementor\Controls_Manager::TEXT,
+				'default' => 'hike',
+				'placeholder' => 'dded',
+			]
+		);
 	
 		$this->end_controls_section();
 	}
@@ -62,7 +71,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 
 	protected function render() {
-		/*
+		
 // Check rows existexists.
 if( have_rows('gallery') ):
 
@@ -82,8 +91,8 @@ if( have_rows('gallery') ):
 else :
     // Do something...
 endif;
-*/
-echo 'hi';
+
+
 
 	}
 
