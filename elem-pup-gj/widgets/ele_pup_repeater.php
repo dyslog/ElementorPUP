@@ -18,15 +18,15 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		return 'eicon-code';
 	}
 
-	public function get_categories() {
+	/*public function get_categories() {
 		return [ 'general' ];
-	}
+	}*/
 
 	public function get_keywords() {
 		return [ 'hello', 'world' ];
 	}
 
-/*
+
 	public function get_group() {
 		return [ 'site' ];
 	}
@@ -35,7 +35,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 	public function get_categories() {
 		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
 	}
-*/
+/**/
 
 
 
