@@ -77,10 +77,11 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		echo $settings['repeater_field_name'] . 'rep name ';
 
 // Check rows existexists.
-if( have_rows('gallery') ):
+$repeater_field_name = $settings['repeater_field_name']
+if( have_rows($repeater_field_name) ):
 
     // Loop through rows.
-    while( have_rows('gallery') ) : the_row();
+    while( have_rows($repeater_field_name) ) : the_row();
 
         // Load sub field value.
         $sub_value = get_sub_field('title');
