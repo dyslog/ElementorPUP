@@ -1,4 +1,10 @@
 <?php
+
+namespace Solid_Dropdown;
+
+use Elementor\Repeater;
+use Elementor\Widget_Base;
+
 class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 	public function get_name() {
