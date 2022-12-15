@@ -73,6 +73,9 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 			[
 				'label' => esc_html__( 'Fields', 'elementor-acf-average-dynamic-tag' ),
 				'type' => 'text',
+				'dynamic' => [
+					'active' => true,
+				],
 			]
 		);
 	
