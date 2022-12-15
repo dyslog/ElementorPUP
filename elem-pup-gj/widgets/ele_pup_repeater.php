@@ -4,7 +4,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 
-class Ele_Pup_Repeater extends \Elementor\Core\DynamicTags\Tag {
+class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 	public function get_name() {
 		return 'hello_world_widget_1';
