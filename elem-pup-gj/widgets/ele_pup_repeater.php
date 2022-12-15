@@ -36,10 +36,11 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		$this->start_controls_section(
 			'content_section',
 			[
-				'label' => __( 'Options', self::$slug ),
+				'label' => esc_html__( 'Content', 'elementor-currency-control' ),
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
+
 		$this->add_control(
 			'price',
 			[
