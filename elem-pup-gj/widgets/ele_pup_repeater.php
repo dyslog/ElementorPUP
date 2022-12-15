@@ -24,7 +24,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 	protected function render() {
 		?>
 
-		<p> Hello World </p>
+		<p> Hello World1 </p>
 
 		<?php
 
@@ -36,6 +36,8 @@ if( have_rows('gallery') ):
 
         // Load sub field value.
         $sub_value = get_sub_field('title');
+		echo the_sub_field('title');
+		echo "hello"; 
         // Do something...
 
     // End loop.
