@@ -38,7 +38,14 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
 			]
 		);
-	
+		$this->add_control(
+			'price',
+			[
+				'label' => esc_html__( 'Price', 'elementor-currency-control' ),
+				'type' => \Elementor\Controls_Manager::NUMBER,
+				'default' => 100,
+			]
+		);
 
 	
 		$this->end_controls_section();
@@ -52,12 +59,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 
 	protected function render() {
-		?>
-
-		<p> Hello World1 </p>
-
-		<?php
-
+		
 // Check rows existexists.
 if( have_rows('gallery') ):
 
