@@ -31,7 +31,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 
 
-	protected function _register_controls() {
+	/*protected function _register_controls() {
 
 		$this->start_controls_section(
 			'content_section',
@@ -53,7 +53,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		$this->end_controls_section();
 	}
 
-
+*/
 
 
 
@@ -61,7 +61,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 
 	protected function render() {
-		
+		/*
 // Check rows existexists.
 if( have_rows('gallery') ):
 
@@ -81,7 +81,8 @@ if( have_rows('gallery') ):
 else :
     // Do something...
 endif;
-
+*/
+echo 'hi';
 
 	}
 
