@@ -68,6 +68,13 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 				'placeholder' => 'dded',
 			]
 		);
+		$this->add_control(
+			'fields',
+			[
+				'label' => esc_html__( 'Fields', 'elementor-acf-average-dynamic-tag' ),
+				'type' => 'text',
+			]
+		);
 	
 		$this->end_controls_section();
 	}
