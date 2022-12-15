@@ -21,7 +21,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		return [ 'hello', 'world' ];
 	}
 
-/*COMTROLS*/
+
 
 protected function _register_controls() {
 
@@ -56,7 +56,7 @@ protected function _register_controls() {
 	$this->end_controls_section();
 }
 
-////////////////////////////////////
+
 
 
 
