@@ -27,6 +27,26 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		<p> Hello World </p>
 
 		<?php
+
+// Check rows existexists.
+if( have_rows('gallery') ):
+
+    // Loop through rows.
+    while( have_rows('gallery') ) : the_row();
+
+        // Load sub field value.
+        $sub_value = get_sub_field('title');
+        // Do something...
+
+    // End loop.
+    endwhile;
+
+// No value.
+else :
+    // Do something...
+endif;
+
+
 	}
 }
 ?>
