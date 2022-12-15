@@ -51,7 +51,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		);
 
 		$this->add_control(
-			'widget_value',
+			'repeater_field_name',
 			[
 				'label' => esc_html__( 'value', 'elementor-currency-control' ),
 				'type' => \Elementor\Controls_Manager::TEXT,
@@ -72,6 +72,10 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 	protected function render() {
 		
+
+		$settings = $this->get_settings_for_display();
+		echo $settings['repeater_field_name'] . 'rep name ';
+
 // Check rows existexists.
 if( have_rows('gallery') ):
 
