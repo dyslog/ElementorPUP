@@ -29,6 +29,23 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
 
 
+	protected function _register_controls() {
+
+		$this->start_controls_section(
+			'content_section',
+			[
+				'label' => __( 'Options', self::$slug ),
+				'tab' => \Elementor\Controls_Manager::TAB_CONTENT,
+			]
+		);
+	
+
+	
+		$this->end_controls_section();
+	}
+
+
+
 
 
 
