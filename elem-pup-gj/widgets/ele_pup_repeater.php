@@ -1,5 +1,7 @@
 <?php
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly.
+}
 
 
 class Ele_Pup_Repeater extends \Elementor\Widget_Base {
@@ -17,7 +19,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 	}
 
 	public function get_categories() {
-		return [ 'basic' ];
+		return [ 'general' ];
 	}
 
 	public function get_keywords() {
@@ -69,7 +71,7 @@ if( have_rows('gallery') ):
         // Load sub field value.
         $sub_value = get_sub_field('title');
 		echo the_sub_field('title');
-		echo "hello"; 
+		echo 'hello'; 
         // Do something...
 
     // End loop.
