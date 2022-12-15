@@ -1,9 +1,6 @@
 <?php
 
-namespace Solid_Dropdown;
 
-use Elementor\Repeater;
-use Elementor\Widget_Base;
 
 class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 
@@ -81,25 +78,7 @@ endif;
 			]
 		);
 	
-		$this->add_control(
-			'widget_value',
-			[
-				'label' => __( 'value', self::$slug ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'value', self::$slug ),
-				'placeholder' => __( 'Value Attribute', self::$slug ),
-			]
-		);
-	
-		$this->add_control(
-			'widget_contents',
-			[
-				'label' => __( 'contents', self::$slug ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => __( 'contents', self::$slug ),
-				'placeholder' => __( 'Option Contents', self::$slug ),
-			]
-		);
+
 	
 		$this->end_controls_section();
 	}
