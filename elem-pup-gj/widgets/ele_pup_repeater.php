@@ -77,7 +77,7 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		echo $settings['repeater_field_name'] . 'rep name ';
 
 // Check rows existexists.
-$repeater_field_name = $settings['repeater_field_name']
+$repeater_field_name = $settings['repeater_field_name'];
 if( have_rows($repeater_field_name) ):
 
     // Loop through rows.
