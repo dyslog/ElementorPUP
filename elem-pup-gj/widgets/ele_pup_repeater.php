@@ -26,6 +26,15 @@ class Ele_Pup_Repeater extends \Elementor\Widget_Base {
 		return [ 'hello', 'world' ];
 	}
 
+	
+	public function get_group() {
+		return [ 'site' ];
+	}
+
+	
+	public function get_categories() {
+		return [ \Elementor\Modules\DynamicTags\Module::TEXT_CATEGORY ];
+	}
 
 
 
