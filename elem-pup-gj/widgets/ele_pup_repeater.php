@@ -115,6 +115,33 @@ endif;
 
 
 
+$fields = $this->get_settings( 'fields' );
+		$sum = 0;
+		$count = 0;
+		$value = 0;
+
+		// Make sure that ACF if installed and activated
+		if ( ! function_exists( 'get_field' ) ) {
+			echo 0;
+			return;
+		}
+
+		foreach ( explode( ',', $fields ) as $index => $field_name ) {
+			$field = get_field( $field_name );
+			if ( (int) $field > 0 ) {
+				$sum += (int) $field;
+				$count++;
+			}
+		}
+
+		if ( 0 !== $count ) {
+			$value = $sum / $count;
+		}
+
+		echo $value;
+
+
+
 	}
 
 
